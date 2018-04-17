@@ -47,3 +47,14 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+// process data1 input from form
+document.querySelector('.form-center').addEventListener('submit', function() {
+    var x = document.forms["myForm"]["data1"].value;
+    if (x == "") {
+        alert("Values can not be empty");
+        return false;
+    } else {
+        alert("Values entered correctly");
+    }
+});
